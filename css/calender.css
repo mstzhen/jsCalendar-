@@ -1,0 +1,47 @@
+
+    .disabled {
+        cursor: no-drop;
+        color: #999;
+        background: #fafafa;
+    }
+
+    #calendar-box-table {
+        border-collapse: collapse;
+        border: 1px solid #333;
+        position: absolute;
+    }
+
+    #calendar-box-table tr th {
+        height: 34px;
+        width: 34px;
+    }
+
+    #calendar-box-table tbody tr td {
+        height: 34px;
+        width: 34px;
+        text-align: center;
+    }
+
+    #calendar-box-table tr th:nth-child(odd) {
+        cursor: pointer;
+    }
+
+    #calendar-box-table thead tr:first-child {
+        background: #3bb4f2;
+        color: #fff;
+    }
+
+    .calendar-current {
+        color: red;
+    }
+
+    .calendar-flag:hover {
+        cursor: pointer;
+        color: #333;
+        background: #f1f2f3;
+    }
+
+    .calendar-chosed {
+        background-color: #f1f2f3;
+        color: #3bb4f2 !important;
+    }
