@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jquery日历组件---带有禁止日期</title>
+    <link rel="stylesheet" type="text/css" href="css/calender.css">
+</head>
+
+<body>
+    <input type="text" placeholder="请输入出发时间" id="test1" readonly>
+    <input type="text" placeholder="请输入结束时间" id="test2" readonly>
+    <label>
+        天数：<input type="text" value="0" id="dayNum" readonly>
+    </label>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jsCalender.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $("#test1").calendar({
+            base: "test1",
+            vary: "test2"
+        });
+        $("#test2").calendar({
+            base: "test1",
+            vary: "test2"
+        });
+
+    })
+    </script>
+</body>
+
+</html>
